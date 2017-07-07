@@ -1,4 +1,4 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a starter template for [Ionic](http://ionicframework.com/docs/) projects./
 it's a game that guess the number that you are thinking in
 
 ## How to use this template
