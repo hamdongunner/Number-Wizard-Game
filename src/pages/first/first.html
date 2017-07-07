@@ -1,0 +1,84 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>WIZARD</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card style="margin: 0px; border: none;  width: 100%;" *ngIf="view7">
+    <img src="./assets/images/2.png" />
+  </ion-card>
+
+<h1 text-center *ngIf="view7">you are thinking in the number</h1>
+  <h1 *ngIf="view7" text-center>{{result}}</h1>
+
+<ion-grid padding  *ngIf="view1">
+  <ion-row>
+    <ion-col *ngFor="let x of firstArray">
+        <button color="ligthOne" ion-fab>{{x}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid padding *ngIf="view2">
+  <ion-row>
+    <ion-col *ngFor="let x of secondArray">
+        <button color="ligthOne" ion-fab>{{x}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid padding *ngIf="view3">
+  <ion-row>
+    <ion-col *ngFor="let x of thirdArray">
+        <button color="ligthOne" ion-fab>{{x}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid padding *ngIf="view4">
+  <ion-row>
+    <ion-col *ngFor="let x of fourthArray">
+        <button color="ligthOne" ion-fab>{{x}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid padding *ngIf="view5">
+  <ion-row>
+    <ion-col *ngFor="let x of fifthArray">
+        <button color="ligthOne" ion-fab>{{x}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid padding *ngIf="view6">
+  <ion-row>
+    <ion-col *ngFor="let x of sixthArray">
+        <button color="ligthOne" ion-fab>{{x}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>
+
+
+ <ion-footer>
+        <button ion-button block color="newColor" (click)="resBtn()" *ngIf="btn3View" >Rest</button>   
+   <ion-grid>
+     <ion-row>
+       <ion-col>
+        <button ion-button block color="newColor" (click)="yesBtn()" *ngIf="btn1View" >Yes</button>
+       </ion-col>
+       <ion-col>
+        <button ion-button block color="newColor" (click)="noBtn()" *ngIf="btn2View" >No</button>
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+</ion-footer>
